@@ -1,0 +1,159 @@
+*{
+    padding: 0;margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,"sans-serif";
+}
+body {
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(village1.jpg);
+    height: 95vh;
+    width:100%;
+    background-size:cover;
+    background-position:center;
+    box-shadow: 0px 10px 20px -3px black;
+}
+header ul{
+    list-style-type: none;
+    float: right;
+    padding: 5px;
+    /* margin-top: 15px; */
+}
+header ul li{
+    display: inline;
+    padding: 3px;
+}
+header ul li a{
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px 20px;
+    color: hsl(0, 0%, 100%);
+    transition: 0.5s ease;
+    font-size: 18px;
+}
+header ul li a:hover{
+    background-color: black;
+}
+.logo img{
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+.nav{
+    margin:auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.title h1{
+    color: white;
+    font-size: 43px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40vh;
+    width: 100vw;
+}
+
+/* CARDS CREATION */
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    /* margin-top: 30px; */
+}
+.box{
+   margin-top: 50px;
+}
+.cards{
+    height: 400px;
+    margin:40px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    position: relative;
+}
+img{
+    height: 400px;
+    width: 350px;
+    border-radius: 4px;
+}
+.intro{
+    height: 50px;
+    width: 350px;
+    padding:0px 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(27,27,27,0.5);
+    color: white;  
+    transition:0.9s; 
+}
+
+.intro h1{
+    margin:3px 10px;
+    font-size: 30px;
+}
+.cards p{
+    font-size: 20px;
+    margin: 20px;
+    visibility: hidden;
+    /* display: none; */
+    opacity: 0;
+}
+span{
+    font-weight: bold;
+}
+.cards:hover{
+    cursor: pointer;
+}
+.cards:hover .intro{
+    height: 190px;
+    /* height: auto; */
+    bottom:0px;
+    background: rgba(0, 0, 0, 0.301);
+}
+.cards:hover p{
+    opacity: 1;
+    visibility: visible;
+    /* display: inline-block; */
+}
+/* .cards:hover img{
+    transform: scale(1) rotate(0deg);
+} */
+.waterfalls{
+    color: rgb(85, 221, 226);
+}
+
+/* Footer Styles */
+footer {
+    background: #707070;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 16vh;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.socials li{
+    list-style: none;
+    padding: 5px 10px;
+}
+
+.socials li a i{
+    color: white;
+}
